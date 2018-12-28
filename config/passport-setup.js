@@ -7,19 +7,20 @@ passport.use(
 	new GoogleStrategy({
 	// option for the google strategy
 	clientID: keys.google.clientID,
-	clientSecret: keys.google.clientSecret
-	}), () =>{
+	clientSecret: keys.google.clientSecret,
+	callbackURL: "/auth/google/redirect"
+	}, () =>{
 	// passport callback function
 	}
-);
+));
 
 passport.use(
 	new GithubStrategy({
 	// option for the github strategy
 	clientID: keys.github.clientID,
 	clientSecret: keys.github.clientSecret,	
-	callbackURL: "http://localhost:8000/auth/github/"
-	}), () => {
-	// passpor callback function
+	callbackURL: "/auth/github/redirect"
+	}, () => {
+	// passport callback function
 	}
-);
+));
