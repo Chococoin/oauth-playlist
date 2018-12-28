@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>OAuth Tutorials</title>
+	<title>Login</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style>
+		main a {
+			margin-left: 5%;
+		}
+	</style>
 </head>
 <body>
 	<nav>
@@ -13,15 +18,12 @@
 			<li><a href="/auth/logout">Logout</a></li>
 		</ul>
 	</nav>
-	<div class="container">
-		<header>
-			<h1>Net Ninja OAuth Tut's</h1>
-			<h2>Homepage</h2>
-		</header>
-		<main>
-			<p>Probably the best OAuth tutorials on the planet :)</p>
-		</main>
-	</div>
-	
+	<header>
+		<h1>Loging using...</h1>
+	</header>
+	<main>
+		<a class="waves-effect waves-light btn red darken-4" href="/auth/google">Google+</a>
+		<a class="waves-effect waves-light btn deep-purple darken-4" href="/auth/github">Github</a>
+	</main>
 </body>
 </html>
