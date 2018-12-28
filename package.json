@@ -18,7 +18,10 @@
   "homepage": "https://github.com/Chococoin/oauth-playlist#readme",
   "dependencies": {
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11",
+    "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
