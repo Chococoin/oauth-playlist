@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# passport keys
+config/keys.js
