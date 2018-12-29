@@ -18,7 +18,7 @@ router.get('/google', passport.authenticate('google', {
 }));
 
 // callback auth redirect google
-router.get('/google/redirect', (req, res) => {
+router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
 	res.render('login');
 });
 
@@ -28,7 +28,7 @@ router.get('/github', passport.authenticate('github', {
 }));
 
 // callback auth redirect github
-router.get('/github/redirect', (req, res) => {
+router.get('/github/redirect', passport.authenticate('github'), (req, res) => {
 	res.render('login');
 });
 
